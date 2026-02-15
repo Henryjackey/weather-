@@ -30,7 +30,7 @@ const WEATHERS = [
     desc:"难得晴一会儿，能晒点就晒点 ~☀️",
     vars:{
       "--sky-1":"#a8dbff","--sky-2":"#e9f7ff",
-      "--castle-opacity":".15","--castle-blur":".8px",
+      "--castle-opacity":".28","--castle-blur":".8px",
       "--cloud-opacity":".20","--cloud-speed":"13s",
       "--fog-opacity":".05","--precip-opacity":"0",
       "--wind-opacity":"0","--scene-sat":"1.03","--scene-ct":"1.05"
@@ -43,7 +43,7 @@ const WEATHERS = [
     desc:"太阳在打盹，云在加班......",
     vars:{
       "--sky-1":"#9fd3ff","--sky-2":"#e8f4ff",
-      "--castle-opacity":".16","--castle-blur":"1px",
+      "--castle-opacity":".28","--castle-blur":"1px",
       "--cloud-opacity":".30","--cloud-speed":"11s",
       "--fog-opacity":".07","--precip-opacity":"0",
       "--wind-opacity":"0","--scene-sat":"1.0","--scene-ct":"1.04"
@@ -56,7 +56,7 @@ const WEATHERS = [
     desc:"又是阴天…维生素D库存告急！",
     vars:{
       "--sky-1":"#8ec7ff","--sky-2":"#dbeeff",
-      "--castle-opacity":".17","--castle-blur":"1.2px",
+      "--castle-opacity":".25","--castle-blur":"1.2px",
       "--cloud-opacity":".44","--cloud-speed":"10s",
       "--fog-opacity":".10","--precip-opacity":"0",
       "--wind-opacity":"0","--scene-sat":".97","--scene-ct":"1.02"
@@ -69,7 +69,7 @@ const WEATHERS = [
     desc:"云跑得更快咯......",
     vars:{
       "--sky-1":"#86c5ff","--sky-2":"#d9f0ff",
-      "--castle-opacity":".15","--castle-blur":"1px",
+      "--castle-opacity":".25","--castle-blur":"1px",
       "--cloud-opacity":".26","--cloud-speed":"6.5s",
       "--fog-opacity":".06","--precip-opacity":"0",
       "--wind-opacity":".85","--wind-speed":"0.90s",
@@ -83,7 +83,7 @@ const WEATHERS = [
     desc:"城堡远远的像在梦里——",
     vars:{
       "--sky-1":"#9cc9f3","--sky-2":"#e9f2ff",
-      "--castle-opacity":".10","--castle-blur":"2.2px",
+      "--castle-opacity":".15","--castle-blur":"2.2px",
       "--cloud-opacity":".20","--cloud-speed":"12s",
       "--fog-opacity":".46","--precip-opacity":"0",
       "--wind-opacity":"0","--scene-sat":".93","--scene-ct":"1.01"
@@ -98,7 +98,7 @@ const WEATHERS = [
     desc:"滴滴答答，滴滴答答",
     vars:{
       "--sky-1":"#84bfff","--sky-2":"#d7ecff",
-      "--castle-opacity":".15","--castle-blur":"1.2px",
+      "--castle-opacity":".28","--castle-blur":"1.2px",
       "--cloud-opacity":".34","--cloud-speed":"10s",
       "--fog-opacity":".14","--precip-opacity":".85",
       "--wind-opacity":"0","--scene-sat":".97","--scene-ct":"1.02"
@@ -112,7 +112,7 @@ const WEATHERS = [
     desc:"雨更密啦…",
     vars:{
       "--sky-1":"#76b6ff","--sky-2":"#cfe6ff",
-      "--castle-opacity":".15","--castle-blur":"1.3px",
+      "--castle-opacity":".28","--castle-blur":"1.3px",
       "--cloud-opacity":".40","--cloud-speed":"9s",
       "--fog-opacity":".18","--precip-opacity":".95",
       "--wind-opacity":".12","--wind-speed":"1.10s",
@@ -127,7 +127,7 @@ const WEATHERS = [
     desc:"这雨有点狠，卡皮巴拉也顶不住！",
     vars:{
       "--sky-1":"#6aaeff","--sky-2":"#c6ddff",
-      "--castle-opacity":".13","--castle-blur":"1.6px",
+      "--castle-opacity":".28","--castle-blur":"1.6px",
       "--cloud-opacity":".48","--cloud-speed":"8s",
       "--fog-opacity":".22","--precip-opacity":"1",
       "--wind-opacity":".22","--wind-speed":"1.00s",
@@ -142,7 +142,7 @@ const WEATHERS = [
     desc:"轰隆一下，下一秒又装没事hh",
     vars:{
       "--sky-1":"#5aa3ff","--sky-2":"#bcd6ff",
-      "--castle-opacity":".12","--castle-blur":"1.9px",
+      "--castle-opacity":".20","--castle-blur":"1.9px",
       "--cloud-opacity":".52","--cloud-speed":"7.5s",
       "--fog-opacity":".24","--precip-opacity":"1",
       "--wind-opacity":".26","--wind-speed":"0.95s",
@@ -159,7 +159,7 @@ const WEATHERS = [
     desc:"轻轻飘，世界的音量被调小了一点点。",
     vars:{
       "--sky-1":"#b9dcff","--sky-2":"#f2f8ff",
-      "--castle-opacity":".14","--castle-blur":"1.2px",
+      "--castle-opacity":".20","--castle-blur":"1.2px",
       "--cloud-opacity":".22","--cloud-speed":"12s",
       "--fog-opacity":".14","--precip-opacity":".95",
       "--wind-opacity":".08","--wind-speed":"1.2s",
@@ -174,7 +174,7 @@ const WEATHERS = [
     desc:"雪更密咯…路上走路要小心",
     vars:{
       "--sky-1":"#b2d6ff","--sky-2":"#eef6ff",
-      "--castle-opacity":".12","--castle-blur":"1.6px",
+      "--castle-opacity":".16","--castle-blur":"1.6px",
       "--cloud-opacity":".26","--cloud-speed":"10.5s",
       "--fog-opacity":".18","--precip-opacity":"1",
       "--wind-opacity":".14","--wind-speed":"1.05s",
@@ -189,7 +189,7 @@ const WEATHERS = [
     desc:"风卷着雪跑——快撤回室内",
     vars:{
       "--sky-1":"#a9d0ff","--sky-2":"#e8f2ff",
-      "--castle-opacity":".10","--castle-blur":"2.2px",
+      "--castle-opacity":".16","--castle-blur":"2.2px",
       "--cloud-opacity":".28","--cloud-speed":"8s",
       "--fog-opacity":".26","--precip-opacity":"1",
       "--wind-opacity":".68","--wind-speed":"0.82s",
