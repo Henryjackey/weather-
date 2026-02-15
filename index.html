@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Magic Weather + Fireworks</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="card" aria-live="polite">
+    <div class="badge">☁️ 英国天气随机副本</div>
+
+    <h1 id="title">✨ 点一下，给你来点魔法天气</h1>
+    <p id="desc">按「魔法按钮」随机天气；烟花开关独立存在。</p>
+
+    <div class="actions" aria-label="操作区">
+      <button id="magicBtn" class="btn btn--magic" type="button">✨ 魔法按钮：随机天气</button>
+      <button id="fireBtn" class="btn btn--fire" type="button" aria-pressed="false">🧨来点烟花！</button>
+    </div>
+
+    <div class="scene" id="scene" role="img" aria-label="天气场景（可点击放烟花）" tabindex="0">
+      <img class="castle" src="./assets/edinburgh-castle.png" alt="Edinburgh Castle" />
+
+      <div class="cloud cloud--1" aria-hidden="true"></div>
+      <div class="cloud cloud--2" aria-hidden="true"></div>
+      <div class="cloud cloud--3" aria-hidden="true"></div>
+
+      <div class="wind" id="wind" aria-hidden="true"></div>
+      <div class="precip" id="precip" aria-hidden="true"></div>
+      <div class="fog" id="fog" aria-hidden="true"></div>
+      <div class="lightning" id="lightning" aria-hidden="true"></div>
+
+      <!-- 烟花画布（独立模块） -->
+      <canvas id="fireworks" class="fireworks" aria-hidden="true"></canvas>
+
+      <img class="bunny" id="bunny" src="./assets/bunny.png" alt="bunny" />
+      <img class="capybara" id="capybara" src="./assets/capybara.webp" alt="capybara" />
+
+      <div class="ground" aria-hidden="true"></div>
+      <div id="toast" class="toast" aria-live="polite"></div>
+    </div>
+
+    <button id="cycleBtn" class="btn btn--main" type="button">切换天气（下一种）</button>
+  </main>
+
+  <div class="watermark">Henry</div>
+  <script src="./main.js"></script>
+</body>
+</html>
+
+
+
+
