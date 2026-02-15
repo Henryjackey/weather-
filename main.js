@@ -21,7 +21,7 @@ const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 const toast = document.getElementById("toast");
 
 // =======================================================
-// 🌦️ Weather（只有“随机/下一种”按钮，无下拉）
+// Weather（只有“随机/下一种”按钮，无下拉）
 // =======================================================
 const WEATHERS = [
   {
@@ -315,7 +315,7 @@ setWeatherByIndex(weatherIdx);
 
 
 // =======================================================
-// 🧨 Fireworks（更盛大：齐射、多重爆裂、尾迹、闪光 bloom）
+// Fireworks（更盛大：齐射、多重爆裂、尾迹、闪光 bloom）
 // 与天气完全独立
 // =======================================================
 let fireworksOn = false;
@@ -534,7 +534,7 @@ function startFireworks(){
   fireBtn.setAttribute("aria-pressed", "true");
   fireBtn.textContent = "🧨 烟花进行中";
 
-  // 🎉 彩蛋气泡
+  // 彩蛋气泡
   showToast("小宋同学，过年好呀！ 🧨", 2000);
 
   resizeCanvas();
@@ -583,13 +583,12 @@ fireBtn.addEventListener("click", ()=>{
   else startFireworks();
 });
 
-// 点击场景：定点盛大齐射
 function spawnAtClient(clientX, clientY){
   if (!fireworksOn) return;
   const rect = fwCanvas.getBoundingClientRect();
   const x = clientX - rect.left;
   const yT = clamp(clientY - rect.top, 30, rect.height * 0.75);
-  // 点击就来一波“更盛大”
+
   spawnRocketVolley(x, yT, Math.floor(rand(4,7)));
 }
 
@@ -603,7 +602,6 @@ scene.addEventListener("keydown", (e)=>{
 });
 
 function jumpToWeather(changeFn){
-  // 如果烟花开着：先关掉，保证场景立刻可见
   if (fireworksOn) stopFireworks();
 
   // 立刻切天气
@@ -630,3 +628,4 @@ function showToast(msg, duration = 1800){
     toast.classList.remove("show");
   }, duration);
 }
+
